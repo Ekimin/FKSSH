@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn</title>
+</head>
+<body>
+<div style="text-align: center">
+    <button type="button" onclick="playPause()">Play/Pause</button>
+    <br/>
+    <video id="testVideo" controls="controls" >
+        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg">
+        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4">
+    </video>
+</div>
+<br/>
+<div style="text-align: center">
+    <audio src="http://www.w3school.com.cn/song.ogg" controls="controls">
+
+    </audio>
+    <img src="http://oduq3lfcc.bkt.clouddn.com/IDEA-SVN%E5%AE%89%E8%A3%85-setting.png" draggable="true"
+    ondragstart="fDragStart(ev)" style="width: 360px;height: 500px">
+</div>
+<script type="text/javascript">
+    var myVideo=document.getElementById("testVideo");
+
+    function playPause() {
+        if (myVideo.paused){
+            myVideo.play();
+        } else {
+            myVideo.pause();
+        }
+    }
+
+    function fDragStart(en) {
+
+    }
+</script>
+</body>
+</html>
